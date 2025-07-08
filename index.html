@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="todo-card">
+        <div class="todo-header text-center">
+          <h1><i class="fa-solid fa-list-check"></i>TODO LIST</h1>
+        </div>
+        <div class="input-group mb-4">
+          <input
+            id="inputTodo"
+            type="text"
+            class="form-control"
+            placeholder="Nueva tarea"
+            aria-label="Nueva tarea"
+          />
+          <button class="btn btn-terciary btn-add text-light" type="button">
+            <i class="fa solid fa-pencil"></i> Agregar
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="details-section">
+              <p>Total: <span id="totalTodos">0</span></p>
+              <p>Realizados: <span id="completedTodos">0</span></p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="table-responsive">
+              <table id="tableTodo" class="table table-tertiary">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Tarea</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-text">© 2025 Rodrigo Irarrazabal - Desafio Latam.</div>
+      <a
+        href="https://github.com/lolistiko"
+        class="footer-link"
+        target="_blank"
+      >
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
